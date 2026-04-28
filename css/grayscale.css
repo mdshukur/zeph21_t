@@ -502,25 +502,13 @@ body {
 }
 
 
+.extrapadding{
+  padding-bottom: 80px;
+}
 
-
-.hero-section{
-  margin-bottom: 120px;
-  margin-top: 50px;
-}
-.content-sections {
-    padding-top: 100px;
-}
-.extracontentes{
-padding-top: 120px;
-}
 @media (max-width: 768px) {
-.extracontentes{
-padding-top: 80px;
-}
-.hero-section{
-  margin-bottom: 0px;
-  margin-top: 0px;
+.extrapadding{
+  padding-bottom: 0px;
 }
 
 }

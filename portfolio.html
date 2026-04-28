@@ -4,22 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- page title -->
     <title>Portfolio Page</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- icon CSS cdn-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.css"/>
+    <!-- lightbox css cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+    <!-- font CSS -->
+    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <!-- Custom CSS -->
     <link href="css/grayscale.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
 </head>
 
 <body>
 
 
-    <!-- Navigation -->
+    <!--------------- Navigation or Menubar section -------------------->
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
         <div class="container">
             <div class="navbar-header">
@@ -28,13 +34,15 @@
                 </button>
                     <div class="navbar-header">
                     <a class="navbar-brand page-scroll" href="index.html">
-                        <img src="img/logo2.gif" alt="" style="display:inline-block; height:42px; margin-top:-10px;">
+                        <!--------- logo path -------->
+                        <img src="img/logo.gif" alt="" style="display:inline-block; height:42px; margin-top:-10px;">
                         <span class="light">logo title</span>
                     </a>
                     </div>
             </div>
             <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
                 <ul class="nav navbar-nav">
+                    <!-- Menu items -->
                     <li><a class="page-scroll" href="index.html#about">About</a></li>
                      <li class="activess"><a href="index.html#portfolio">Portfolio</a></li>
                     <li><a class="page-scroll" href="index.html#contact">Contact</a></li>
@@ -44,21 +52,10 @@
     </nav>
 
 
-    <div class="content-sections">
-        <div class="container">
-            <div class="hero-section text-center">
-                    <h1>OUR PORTFOLIOS</h1>
-                <a href="#portfolio-sec" class="btn btn-circle page-scroll">
-                    <i class="fa fa-angle-double-down animated"></i>
-                </a>
-            </div>
-        </div>
-    </div>
-
-
-   <section class="content-sections">
+<!---------------------------- Filterable Gallery section ------------------------------->
+   <section class="content-section">
     <div class="container" id="portfolio-sec">
-          <div class="contentes text-center extracontentes">
+          <div class="contentes text-center">
             <h2>The Collection</h2>
             <p>Discover handheld classics that defined generations—where design, innovation, and nostalgia meet.</p>
           </div>
@@ -101,52 +98,53 @@
     <script src="js/grayscale.js"></script>
 
 <script>
+
 const galleryConfig = [
- //================= GAMEBOY POCKET (gbp) ==================//
+ //================= GAMEBOY POCKET (gbp) Tab-1 ==================//
     { category: "gbp", title: "GBP Item 1", 
     // --- Game Boy Pocket: card 1 main image pathh ---
-     main: "https://placehold.co/800x700?text=Gameboy%20(A)",
+     main: "img/gameboy-pocket/card1/gameboy-pocket-card1.png",
      related: 
-     // --- Game Boy Pocket: [card 1] 3 sliding images path ---
-     ["https://placehold.co/800x700?text=Gameboy%20(A)+1", 
-     "https://placehold.co/800x700?text=Gameboy%20(A)+2", 
-     "https://placehold.co/800x700?text=Gameboy%20(A)+3"] },
+     // --- Game Boy Pocket: [card 1] 3 sliders images path ---
+     ["img/gameboy-pocket/card1/sliders/gameboy-pocket-sliders1.png", 
+     "img/gameboy-pocket/card1/sliders/gameboy-pocket-sliders2.png", 
+     "img/gameboy-pocket/card1/sliders/gameboy-pocket-sliders3.png"] },
 
     { category: "gbp", title: "GBP Item 2",
     // --- Game Boy Pocket: card 2  main image pathh ---
-     main: "https://placehold.co/800x700?text=Gameboy%20(B)",
+     main: "img/gameboy-pocket/card2/gameboy-pocket-card2.png",
      related: 
-     // --- Game Boy Pocket: [card 2] 3 sliding images path ---
-     ["https://placehold.co/800x700?text=Gameboy%20(B)+1", 
-    "https://placehold.co/800x700?text=Gameboy%20(B)+2", 
-    "https://placehold.co/800x700?text=Gameboy%20(B)+3"] },
+     // --- Game Boy Pocket: [card 2] 3 sliders images path ---
+     ["img/gameboy-pocket/card2/sliders/gameboy-pocket-sliders1.png", 
+    "img/gameboy-pocket/card2/sliders/gameboy-pocket-sliders2.png", 
+    "img/gameboy-pocket/card2/sliders/gameboy-pocket-sliders3.png"] },
 
     { category: "gbp", title: "GBP Item 3", 
     // --- Game Boy Pocket: card 3  main image pathh ---
-    main: "https://placehold.co/800x700?text=Gameboy%20(C)", 
+    main: "img/gameboy-pocket/card3/gameboy-pocket-card3.png", 
     related: 
-    // --- Game Boy Pocket: [card 3] 3 sliding images path ---
-    ["https://placehold.co/800x700?text=Gameboy%20(C)+1", 
-    "https://placehold.co/800x700?text=Gameboy%20(C)+2", 
-    "https://placehold.co/800x700?text=Gameboy%20(C)+3"] },
+    // --- Game Boy Pocket: [card 3] 3 sliders images path ---
+    ["img/gameboy-pocket/card3/sliders/gameboy-pocket-sliders1.png", 
+    "img/gameboy-pocket/card3/sliders/gameboy-pocket-sliders2.png", 
+    "img/gameboy-pocket/card3/sliders/gameboy-pocket-sliders3.png"] },
 
     { category: "gbp", title: "GBP Item 4", 
     // --- Game Boy Pocket: card 4  main image pathh ---
-    main: "https://placehold.co/800x700?text=Gameboy%20(D)", 
+    main: "img/gameboy-pocket/card4/gameboy-pocket-card4.png", 
     related: 
-    // --- Game Boy Pocket: [card 4] 3 sliding images path ---
-    ["https://placehold.co/800x700?text=Gameboy%20(D)+1", 
-    "https://placehold.co/800x700?text=Gameboy%20(D)+2", 
-    "https://placehold.co/800x700?text=Gameboy%20(D)+3"] },
+    // --- Game Boy Pocket: [card 4] 3 sliders images path ---
+    ["img/gameboy-pocket/card4/sliders/gameboy-pocket-sliders1.png", 
+    "img/gameboy-pocket/card4/sliders/gameboy-pocket-sliders2.png", 
+    "img/gameboy-pocket/card4/sliders/gameboy-pocket-sliders3.png"] },
 
 
 
-    //================= GAMEBOY ADVANCE (gba) ==================//
+    //================= GAMEBOY ADVANCE (gba) Tab-2 ==================//
     { category: "gba", title: "GBA Item 1", 
     // --- Gameboy Advance: card 1 main image pathh ---
     main: "https://placehold.co/800x700?text=Gameboy%20advance%20%20(A)", 
     related: 
-    // --- Gameboy Advance: [card 1] 3 sliding images path ---
+    // --- Gameboy Advance: [card 1] 3 sliders images path ---
     ["https://placehold.co/800x700?text=Gameboy%20advance%20%20(A)+1", 
     "https://placehold.co/800x700?text=Gameboy%20advance%20%20(A)+2", 
     "https://placehold.co/800x700?text=Gameboy%20advance%20%20(A)+3"] },
@@ -155,7 +153,7 @@ const galleryConfig = [
      // --- Gameboy Advance: card 2 main image pathh ---
     main: "https://placehold.co/800x700?text=Gameboy%20advance%20%20(B)", 
     related: 
-    // --- Gameboy Advance: [card 2] 3 sliding images path ---
+    // --- Gameboy Advance: [card 2] 3 sliders images path ---
     ["https://placehold.co/800x700?text=Gameboy%20advance%20%20(B)+1", 
     "https://placehold.co/800x700?text=Gameboy%20advance%20%20(B)+2", 
     "https://placehold.co/800x700?text=Gameboy%20advance%20%20(B)+3"] },
@@ -164,7 +162,7 @@ const galleryConfig = [
      // --- Gameboy Advance: card 3 main image pathh ---
     main: "https://placehold.co/800x700?text=Gameboy%20advance%20%20(C)", 
     related: 
-     // --- Gameboy Advance: [card 3] 3 sliding images path ---
+     // --- Gameboy Advance: [card 3] 3 sliders images path ---
     ["https://placehold.co/800x700?text=Gameboy%20advance%20%20(C)+1", 
     "https://placehold.co/800x700?text=Gameboy%20advance%20%20(C)+2", 
     "https://placehold.co/800x700?text=Gameboy%20advance%20%20(C)+3"] },
@@ -174,18 +172,18 @@ const galleryConfig = [
     main: "https://placehold.co/800x700?text=Gameboy%20advance%20%20(D)",
 
     related: 
-     // --- Gameboy Advance: [card 4] 3 sliding images path ---
+     // --- Gameboy Advance: [card 4] 3 sliders images path ---
     ["https://placehold.co/800x700?text=Gameboy%20advance%20%20(D)+1", 
     "https://placehold.co/800x700?text=Gameboy%20advance%20%20(D)+2", 
     "https://placehold.co/800x700?text=Gameboy%20advance%20%20(D)+3"] },
 
 
-    //================= GBA SP (gba sp) ==================//
+    //================= GBA SP (gba sp) Tab-3 ==================//
     { category: "sp", title: "SP Item 1",
     // --- GBA SP: card 1 main image pathh ---
     main: "https://placehold.co/800x700?text=GBA%20SP%20(A)",
     related: 
-    // --- GBA SP: [card 1] 3 sliding images path ---
+    // --- GBA SP: [card 1] 3 sliders images path ---
     ["https://placehold.co/800x700?text=GBA%20SP%20(A)+1", 
     "https://placehold.co/800x700?text=GBA%20SP%20(A)+2", 
     "https://placehold.co/800x700?text=GBA%20SP%20(A)+3"] },
@@ -194,7 +192,7 @@ const galleryConfig = [
      // --- GBA SP: card 2 main image pathh ---
     main: "https://placehold.co/800x700?text=GBA%20SP%20(B)", 
     related: 
-    // --- GBA SP: [card 2] 3 sliding images path ---
+    // --- GBA SP: [card 2] 3 sliders images path ---
     ["https://placehold.co/800x700?text=GBA%20SP%20(B)+1", 
     "https://placehold.co/800x700?text=GBA%20SP%20(B)+2", 
     "https://placehold.co/800x700?text=GBA%20SP%20(B)+3"] },
@@ -203,7 +201,7 @@ const galleryConfig = [
     // --- GBA SP: card 3 main image pathh --- 
     main: "https://placehold.co/800x700?text=GBA%20SP%20(C)", 
     related: 
-    // --- GBA SP: [card 3] 3 sliding images path ---
+    // --- GBA SP: [card 3] 3 sliders images path ---
     ["https://placehold.co/800x700?text=GBA%20SP%20(C)+1", 
     "https://placehold.co/800x700?text=GBA%20SP%20(C)+2", 
     "https://placehold.co/800x700?text=GBA%20SP%20(C)+3"] },
@@ -212,19 +210,19 @@ const galleryConfig = [
     // --- GBA SP: card 4 main image pathh ---  
     main: "https://placehold.co/800x700?text=GBA%20SP%20(D)", 
     related: 
-     // --- GBA SP: [card 4] 3 sliding images path ---
+     // --- GBA SP: [card 4] 3 sliders images path ---
     ["https://placehold.co/800x700?text=GBA%20SP%20(D)+1", 
     "https://placehold.co/800x700?text=GBA%20SP%20(D)+2", 
     "https://placehold.co/800x700?text=GBA%20SP%20(D)+3"] },
 
 
 
-     //================= NDS LITE SP ==================//
+     //================= NDS LITE SP Tab-4 ==================//
     { category: "nds", title: "NDS Item 1", 
      // --- Nds Lite : card 1 main image pathh ---  
     main: "https://placehold.co/800x700?text=NDS%20LITE%20(A)", 
     related: 
-     // --- Nds Lite : [card 1] 3 sliding images path ---
+     // --- Nds Lite : [card 1] 3 sliders images path ---
     ["https://placehold.co/800x700?text=NDS%20LITE%20(A)+1", 
     "https://placehold.co/800x700?text=NDS%20LITE%20(A)+2", 
     "https://placehold.co/800x700?text=NDS%20LITE%20(A)+3"] },
@@ -233,7 +231,7 @@ const galleryConfig = [
      // --- Nds Lite : card 2 main image pathh --- 
     main: "https://placehold.co/800x700?text=NDS%20LITE%20(B)", 
     related: 
-    // --- Nds Lite : [card 2] 3 sliding images path ---
+    // --- Nds Lite : [card 2] 3 sliders images path ---
     ["https://placehold.co/800x700?text=NDS%20LITE%20(B)+1", 
     "https://placehold.co/800x700?text=NDS%20LITE%20(B)+2", 
     "https://placehold.co/800x700?text=NDS%20LITE%20(B)+3"] },
@@ -243,7 +241,7 @@ const galleryConfig = [
     // --- Nds Lite : card 3 main image pathh ---
     main: "https://placehold.co/800x700?text=NDS%20LITE%20(C)", 
     related: 
-    // --- Nds Lite : [card 3] 3 sliding images path ---
+    // --- Nds Lite : [card 3] 3 sliders images path ---
     ["https://placehold.co/800x700?text=NDS%20LITE%20(C)+1", 
     "https://placehold.co/800x700?text=NDS%20LITE%20(C)+2", 
     "https://placehold.co/800x700?text=NDS%20LITE%20(C)+3"] },
@@ -252,17 +250,17 @@ const galleryConfig = [
     // --- Nds Lite : card 4 main image pathh --- 
     main: "https://placehold.co/800x700?text=NDS%20LITE%20(D)", 
     related: 
-    // --- Nds Lite : [card 4] 3 sliding images path ---
+    // --- Nds Lite : [card 4] 3 sliders images path ---
     ["https://placehold.co/800x700?text=NDS%20LITE%20(D)+1", 
     "https://placehold.co/800x700?text=NDS%20LITE%20(D)+2", 
     "https://placehold.co/800x700?text=NDS%20LITE%20(D)+3"] },
     
-     //================= OTHERS ==================//
+     //================= OTHERS Tab-5 ==================//
     { category: "other", title: "Other Item 1", 
     // --- Others : card 1 main image pathh ---
     main: "https://placehold.co/800x700?text=Others%20(A)", 
     related: 
-    // --- Others : [card 1] 3 sliding images path ---
+    // --- Others : [card 1] 3 sliders images path ---
     ["https://placehold.co/800x700?text=Others%20(A)+1", 
     "https://placehold.co/800x700?text=Others%20(A)+2", 
     "https://placehold.co/800x700?text=Others%20(A)+3"] },
@@ -271,7 +269,7 @@ const galleryConfig = [
     // --- Others : card 2 main image pathh ---
     main: "https://placehold.co/800x700?text=Others%20(B)", 
     related: 
-    // --- Others : [card 2] 3 sliding images path ---
+    // --- Others : [card 2] 3 sliders images path ---
     ["https://placehold.co/800x700?text=Others%20(B)+1", 
     "https://placehold.co/800x700?text=Others%20(B)+2", 
     "https://placehold.co/800x700?text=Others%20(B)+3"] },
@@ -280,7 +278,7 @@ const galleryConfig = [
     // --- Others : card 3 main image pathh ---
     main: "https://placehold.co/800x700?text=Others%20(C)", 
     related: 
-    // --- Others : [card 3] 3 sliding images path ---
+    // --- Others : [card 3] 3 sliders images path ---
     ["https://placehold.co/800x700?text=Others%20(C)+1", 
     "https://placehold.co/800x700?text=Others%20(C)+2", 
     "https://placehold.co/800x700?text=Others%20(C)+3"] },
@@ -289,7 +287,7 @@ const galleryConfig = [
     // --- Others : card 4 main image pathh ---
     main: "https://placehold.co/800x700?text=Others%20(D)", 
     related: 
-    // --- Others : [card 4] 3 sliding images path ---
+    // --- Others : [card 4] 3 sliders images path ---
     ["https://placehold.co/800x700?text=Others%20(D)+1", 
     "https://placehold.co/800x700?text=Others%20(D)+2", 
     "https://placehold.co/800x700?text=Others%20(D)+3"] }
@@ -299,9 +297,9 @@ $(document).ready(function(){
     const $container = $('#js-gallery-grid');
     let allGroups = [];
 
-    // ১. ডাটা জেনারেট করা
+    // 1. data generate
     galleryConfig.forEach((item, index) => {
-        const uniqueID = "group-" + index; // প্রতিটি কার্ডের জন্য চিরস্থায়ী ইউনিক আইডি
+        const uniqueID = "group-" + index; // each card for permanent id
         
         let groupHTML = `
             <div class="col-md-3 col-sm-6 col-xs-6 gallery-item main-card ${item.category}">
@@ -312,7 +310,6 @@ $(document).ready(function(){
                     </div>
                 </a>`;
         
-        // রিলেটেড ইমেজগুলোকেও একই uniqueID তে রাখা হলো
         item.related.forEach((path) => {
             groupHTML += `<a href="${path}" data-lightbox="${uniqueID}" data-title="${item.title}" class="hidden-item"></a>`;
         });
@@ -321,7 +318,7 @@ $(document).ready(function(){
         allGroups.push(groupHTML);
     });
 
-    // ২. র্যান্ডম শাফেল (Shuffle) - এটি শুধু "All" ট্যাবের শুরুর সজ্জা ঠিক করবে
+    //  randome imgage calculete and active tab
     for (let i = allGroups.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
         [allGroups[i], allGroups[j]] = [allGroups[j], allGroups[i]];
@@ -329,7 +326,7 @@ $(document).ready(function(){
 
     $container.append(allGroups.join(''));
 
-    // ৩. Isotope ইনিশিয়ালাইজ
+    // ৩. Isotope 
     var $grid = $container.imagesLoaded(function() {
         $grid.isotope({
             itemSelector: '.main-card',
@@ -337,7 +334,7 @@ $(document).ready(function(){
         });
     });
 
-    // ৪. ফিল্টার বাটন লজিক (এখানে স্লাইড লজিক আর বদলাতে হবে না)
+    // ৪.filter button/tab logic
     $('.filter-btn').on('click', function() {
         $('.filter-btn').removeClass('active');
         $(this).addClass('active');
@@ -348,8 +345,8 @@ $(document).ready(function(){
 
     // Lightbox Settings
     lightbox.option({ 
-        'resizeDuration': 0, 
-        'fadeDuration': 200, 
+        'resizeDuration': 400, 
+        'fadeDuration': 300, 
         'wrapAround': true,
         'disableScrolling': false 
     });
